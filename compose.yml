@@ -1,0 +1,45 @@
+name: Race-Timing
+services:
+  redis:
+    image: redis:latest
+    container_name: redis-cache
+    ports:
+      - "6379:6379"
+    environment:
+      - REDIS_USERNAME=admin
+      - REDIS_PASSWORD=Password123!
+      - REDIS_DISABLE_DEFAULT_USER="true"
+    restart: always
+    command: ["redis-server", "--requirepass", "Password123!"]
+    
+  redis-commander:
+    image: rediscommander/redis-commander:latest
+    container_name: redis-commander
+    restart: always
+    ports:
+      - "8081:8081"
+    
+
+  nano-mq:
+    image: emqx/nanomq:0.18.2-full
+    container_name: nanomq-broker
+    ports:
+      - "1883:1883" # MQTT port
+      - "8082:8081" # HTTP management API
+    restart: always
+    environment:
+      - NANOMQ_ALLOW_ANONYMOUS=true
+      - NANOMQ_HTTP_SERVER_ENABLE=true
+      - NANOMQ_HTTP_SERVER_USERNAME=admin
+      - NANOMQ_HTTP_SERVER_PASSWORD=Password123!
+      
+  postgres:
+    image: postgres:15
+    container_name: postgresql-db
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=Password123!
+      - POSTGRES_DB=race_timings

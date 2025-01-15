@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "source\Common", "{58D63E3B-654A-4515-8D07-25F0DDF1D297}"
+EndProject
+a
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IoT", "source\IoT", "{4DB7EAA1-75F1-4B6B-9FE0-1CE1C6564E62}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Server", "source\Server", "{1DAEAC42-B916-4AE9-B7FA-2B804585D36C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebUI", "source\WebUI", "{02DA2FA3-DF1D-465F-9A63-6221C51B1CE4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RaceTimings.AdminWebClient", "source\WebUI\RaceTimings.AdminWebClient\RaceTimings.AdminWebClient.csproj", "{C9FCC8F4-D0DB-47B3-942D-3C15FCFF9EBC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RaceTimings.Messages", "source\Common\RaceTimings.Messages\RaceTimings.Messages.csproj", "{C9D264FE-7FC8-48BE-A094-13B5368B71E0}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "RaceTimings.AkkaServer", "source\Server\RaceTimings.AkkaServer\RaceTimings.AkkaServer.fsproj", "{21CE9531-C09B-4239-9DBB-45A75D9C1782}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RaceTimings.ProtoActorServer", "source\Server\RaceTimings.ProtoActorServer\RaceTimings.ProtoActorServer.csproj", "{C3AE2611-B2ED-4917-8B12-2E4CD29461AC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RaceTimings.Extensions", "source\Common\RaceTimings.Extensions\RaceTimings.Extensions.csproj", "{D7102879-0D6F-4879-9922-10AD03707B5E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C9FCC8F4-D0DB-47B3-942D-3C15FCFF9EBC} = {02DA2FA3-DF1D-465F-9A63-6221C51B1CE4}
+		{C9D264FE-7FC8-48BE-A094-13B5368B71E0} = {58D63E3B-654A-4515-8D07-25F0DDF1D297}
+		{21CE9531-C09B-4239-9DBB-45A75D9C1782} = {1DAEAC42-B916-4AE9-B7FA-2B804585D36C}
+		{C3AE2611-B2ED-4917-8B12-2E4CD29461AC} = {1DAEAC42-B916-4AE9-B7FA-2B804585D36C}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C9FCC8F4-D0DB-47B3-942D-3C15FCFF9EBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9FCC8F4-D0DB-47B3-942D-3C15FCFF9EBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9FCC8F4-D0DB-47B3-942D-3C15FCFF9EBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9FCC8F4-D0DB-47B3-942D-3C15FCFF9EBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9D264FE-7FC8-48BE-A094-13B5368B71E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9D264FE-7FC8-48BE-A094-13B5368B71E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9D264FE-7FC8-48BE-A094-13B5368B71E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9D264FE-7FC8-48BE-A094-13B5368B71E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21CE9531-C09B-4239-9DBB-45A75D9C1782}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21CE9531-C09B-4239-9DBB-45A75D9C1782}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21CE9531-C09B-4239-9DBB-45A75D9C1782}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21CE9531-C09B-4239-9DBB-45A75D9C1782}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3AE2611-B2ED-4917-8B12-2E4CD29461AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3AE2611-B2ED-4917-8B12-2E4CD29461AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3AE2611-B2ED-4917-8B12-2E4CD29461AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3AE2611-B2ED-4917-8B12-2E4CD29461AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7102879-0D6F-4879-9922-10AD03707B5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7102879-0D6F-4879-9922-10AD03707B5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7102879-0D6F-4879-9922-10AD03707B5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7102879-0D6F-4879-9922-10AD03707B5E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
